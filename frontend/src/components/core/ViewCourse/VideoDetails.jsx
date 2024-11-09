@@ -17,9 +17,10 @@ const VideoDetails = () => {
   const playerRef = useRef(null)
   const dispatch = useDispatch()
   const { token } = useSelector((state) => state.auth)
-  const { courseSectionData, courseEntireData, completedLectures } =
-    useSelector((state) => state.viewCourse)
+  const { courseSectionData, courseEntireData, completedLectures } = useSelector((state) => state.viewCourse)
 
+  // console.log("Course Entire Data : ",courseEntireData);
+  
   const [videoData, setVideoData] = useState([])
   const [previewSource, setPreviewSource] = useState("")
   const [videoEnded, setVideoEnded] = useState(false)
@@ -30,7 +31,8 @@ const VideoDetails = () => {
       if (!courseSectionData.length) return
       if (!courseId && !sectionId && !subSectionId) {
         navigate(`/dashboard/enrolled-courses`)
-      } else {
+      } 
+      else {
         // console.log("courseSectionData", courseSectionData)
         const filteredData = courseSectionData.filter(
           (course) => course._id === sectionId
@@ -41,6 +43,7 @@ const VideoDetails = () => {
         )
         // console.log("filteredVideoData", filteredVideoData)
         setVideoData(filteredVideoData[0])
+        console.log("vedio Data: ",videoData);
         setPreviewSource(courseEntireData.thumbnail)
         setVideoEnded(false)
       }
@@ -194,7 +197,7 @@ const VideoDetails = () => {
               }}
               className="full absolute inset-0 z-[100] grid h-full place-content-center font-inter"
             >
-              {!completedLectures.includes(subSectionId) && (
+              {!completedLectures?.includes(subSectionId) && (
                 <IconBtn
                   disabled={loading}
                   onclick={() => handleLectureCompletion()}

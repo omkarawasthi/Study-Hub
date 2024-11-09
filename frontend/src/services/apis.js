@@ -19,7 +19,7 @@ export const profileEndpoints = {
 // STUDENTS ENDPOINTS
 export const studentEndpoints = {
   COURSE_PAYMENT_API: BASE_URL + "/api/v1/payment/capturePayment",
-  COURSE_VERIFY_API: BASE_URL + "/api/v1/payment/verifyPayment",
+  COURSE_VERIFY_API: BASE_URL + "/api/v1/payment/verifySignature",
   SEND_PAYMENT_SUCCESS_EMAIL_API: BASE_URL + "/api/v1/payment/sendPaymentSuccessEmail",
 }
 
@@ -39,7 +39,7 @@ export const courseEndpoints = {
   DELETE_SUBSECTION_API: BASE_URL + "/api/v1/course/deleteSubSection",
   DELETE_COURSE_API: BASE_URL + "/api/v1/course/deleteCourse",
   GET_FULL_COURSE_DETAILS_AUTHENTICATED:
-    BASE_URL + "/api/v1/course/getFullCourseDetails",
+    BASE_URL + "/api/v1/course/getCourseDetails",
   LECTURE_COMPLETION_API: BASE_URL + "/api/v1/course/updateCourseProgress",
   CREATE_RATING_API: BASE_URL + "/api/v1/course/createRating",
 }
