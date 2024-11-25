@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 4000;
 
 //database connect
 database.connect();
+
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
@@ -51,6 +52,7 @@ app.get("/", (req, res) => {
 		message:'Your server is up and running....'
 	});
 });
+
 
 app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)
