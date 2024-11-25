@@ -40,6 +40,7 @@ https://studyhub123.netlify.app/
 - Users must register and log in to access the platform.
 Passwords are hashed using a secure algorithm for storage.
 - Login credentials are verified against the database to grant access.
+  
 **Authorization:**
 - After successful login, a JWT token is issued to the user for session validation.
 - The platform checks user roles (student, teacher, admin) to authorize access to specific routes and resources.
