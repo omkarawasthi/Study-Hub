@@ -15,17 +15,19 @@ https://studyhub123.netlify.app/
 - **Course Management:** Access to a comprehensive library of courses tailored for students and managed by teachers and admins.
 
 ## Role-Based Functionality
-  **1. Student Role**
+   **1. Student Role:**
   - Can go through with courses and its description.
   - Access to enrolled courses with progress tracking.
   - Ability to explore the course library and enroll in available  courses.
-**2. Teacher Role**
-- Create and manage courses, including uploading study materials and assignments.
-- Monitor student progress and provide feedback on assignments.
-**3. Admin Role** (Right now Admin not able to login from frontend, it work only on backend, other two student, teacher are in frontend)
-- Manage user accounts for students and teachers (add, remove, or update profiles).
-- Can Add New Courses.
-- Oversee platform activities and generate reports.
+  
+  **2. Teacher Role:**
+  - Create and manage courses, including uploading study materials and assignments.
+  - Monitor student progress and provide feedback on assignments.
+  
+  **3. Admin Role** (Right now Admin not able to login from frontend, it work only on backend, other two student, teacher are in frontend):
+  - Manage user accounts for students and teachers (add, remove, or update profiles).
+  - Can Add New Courses.
+  - Oversee platform activities and generate reports.
 
 ## Tech Stack
  - **Frontend:** React.js for building dynamic and interactive user interfaces.
